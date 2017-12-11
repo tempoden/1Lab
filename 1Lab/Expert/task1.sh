@@ -1,4 +1,4 @@
 #!/bin/bash
 wget http://factorized.net/crusoe.txt
-grep "Friday" crusoe.txt | wc -l
+grep -y -o "\b\w*friday\w*\b" crusoe.txt | wc -l
 rm crusoe.txt
